@@ -6,7 +6,7 @@ int main()
     int n;
     cout << "Enter the number of elements of array: " << endl;
     cin >> n;
-    int arr[n], max, min;
+    int arr[n], maxNo, minNo;
 
     for (int i = 0; i < n; i++)
     {
@@ -14,20 +14,32 @@ int main()
         cin >> arr[i];
     }
 
-    max = min = arr[0];
+    // Basic Approach
+
+    // maxNo = minNo = arr[0];
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (arr[0] < arr[i])
+    //     {
+    //         maxNo = arr[i];
+    //     }
+    //     else
+    //     {
+    //         minNo = arr[i];
+    //     }
+    // }
+
+    // Approach 2
+
+    // maxNo = minNo = INT_MIN;
 
     for (int i = 0; i < n; i++)
     {
-        if (arr[0] < arr[i])
-        {
-            max = arr[i];
-        }
-        else
-        {
-            min = arr[i];
-        }
+        maxNo = max(maxNo, arr[i]);
+        minNo = min(minNo, arr[i]);
     }
 
-    cout << "The maximum element present in array is :" << max << endl;
-    cout << "The minimun element present in array is :" << min << endl;
+    cout << "The maximum element present in array is :" << maxNo << endl;
+    cout << "The minimun element present in array is :" << minNo << endl;
 }
