@@ -6,9 +6,9 @@ int main()
     int n;
     cout << "Enter the number of elements in array " << endl;
     cin >> n;
-    int arr[n], i;
+    int arr[n];
 
-    for (i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++)
     {
         cout << "Enter the element of the array at " << i << " position: " << endl;
         cin >> arr[i];
@@ -16,7 +16,7 @@ int main()
 
     cout << "The array obtained is: " << endl;
 
-    for (i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++)
     {
         cout << arr[i] << " ";
     }
