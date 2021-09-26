@@ -27,7 +27,7 @@ int main()
         }
     }
 
-    cout << "The final obtained after selection sort is: " << endl;
+    cout << "The final array obtained after selection sort is: " << endl;
 
     for (int i = 0; i < n; i++)
     {
