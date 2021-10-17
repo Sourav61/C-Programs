@@ -40,11 +40,11 @@ int main()
 
     if (minidx == INT_MAX)
     {
-        cout << "-1" << endl;
+        cout << "Sorry! There is no repeating element found in the whole array!!" << endl;
     }
     else
     {
-        cout << minidx + 1 << endl;
+        cout << "The first repeating element " << a[minidx] << " is found in the array at " << minidx + 1 << " position!" << endl;
     }
 
     return 0;
