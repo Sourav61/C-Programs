@@ -1,21 +1,31 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
+int main()
+{
 
-    int a,b;
-    cout<<"Enter a number"<<endl;
-    cin>>a>>b;
+    int a, b;
+    cout << "Enter first number of the range: " << endl;
+    cin >> a;
 
-    for(int num=a;num<=b;num++){
+    cout << "Enter the second number of the range: " << endl;
+    cin >> b;
+
+    for (int num = a; num <= b; num++)
+    {
         int i;
-        for(i=2;i<num;i++){
-            if(num%i==0){
+        for (i = 2; i < num; i++)
+        {
+            if (num % i == 0)
+            {
                 break;
             }
         }
-        if(i==num){
-            cout<<num<<endl;
+
+        if (i == num)
+        {
+            cout << i << " prime number between " << a << " and " << i << "is: " << endl;
+            cout << num << endl;
         }
     }
 
