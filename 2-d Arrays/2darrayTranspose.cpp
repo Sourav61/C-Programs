@@ -35,12 +35,20 @@ int main()
         {
             // My method
             // Swapping using any operator
-            if (i != j)
-            {
-                a[i][j] = a[i][j] + a[j][i];
-                a[j][i] = a[i][j] - a[j][i];
-                a[i][j] = a[i][j] - a[j][i];
-            }
+//             if (i != j)
+//             {
+//                 a[i][j] = a[i][j] + a[j][i];
+//                 a[j][i] = a[i][j] - a[j][i];
+//                 a[i][j] = a[i][j] - a[j][i];
+//             }
+            
+            
+            // Original Method
+            //Swapping Using temp variable
+
+            int temp = a[i][j];
+            a[i][j] = a[j][i];
+            a[j][i] = temp;
 
         }
     }
