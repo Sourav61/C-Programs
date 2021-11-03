@@ -34,6 +34,8 @@ int main()
         if (a[r][c] == x)
         {
             found = true;
+            n = r;
+            m = c;
         }
         if (a[r][c] > x)
         {
@@ -47,7 +49,7 @@ int main()
 
     if (found)
     {
-        cout << "The element " << x << " was found." << endl;
+        cout << "The element " << x << " was found at row " << n << " and column " << m << endl;
     }
     else
     {
