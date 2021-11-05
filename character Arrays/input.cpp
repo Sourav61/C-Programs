@@ -11,6 +11,9 @@ int main()
     cout << "Enter the character array: " << endl;
     cin >> arr;
 
+    cout << "The entered character array is: "
+         << " ";
+
     for (int i = 0; i <= n; i++)
     {
         cout << arr[i] << " ";
