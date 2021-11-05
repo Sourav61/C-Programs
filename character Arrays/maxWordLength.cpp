@@ -44,7 +44,7 @@ int main()
 
     cout << "The maximum word length in the character array " << arr << " is: " << maxLen << endl;
 
-    cout << "The word with the maximum length in th character array " << arr << " is: "
+    cout << "The word with the maximum length in the character array " << arr << " is: "
          << " ";
 
     for (int i = 0; i < maxLen; i++)
