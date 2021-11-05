@@ -3,19 +3,37 @@ using namespace std;
 
 int main()
 {
-    char arr[100];
+    int n;
+    cout << "Enter the length of the character array: " << endl;
+    cin >> n;
+
+    char arr[n + 1];
     cout << "Enter the character array: " << endl;
     cin >> arr;
 
-    cout << arr[1] << endl;
-
+    for (int i = 0; i <= n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
     // sizeof() operator to check size of the character!
-
-    cout << sizeof(arr[1]) << endl;
+    cout << endl;
+    for (int i = 0; i <= n; i++)
+    {
+        cout << "The size of the character " << arr[i] << " in the character array " << arr << " is: "
+             << " ";
+        cout << sizeof(arr[i]) << endl;
+    }
+    cout << endl;
 
     // print the ASCII value of the character at a specific position!
 
-    cout << int(arr[1]) << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << "The ASCII value of the character " << arr[i] << " in the character array " << arr << " is: "
+             << " ";
+        cout << int(arr[i]) << endl;
+    }
 
     return 0;
 }
