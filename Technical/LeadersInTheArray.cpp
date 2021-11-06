@@ -15,33 +15,47 @@ int max(int a, int b)
 
 int main()
 {
-    int arr[7] = {5, 17, 6, 4, 8, 2, 1};
+    int n;
+    cout << "Enter the length of the array: " << endl;
+    cin >> n;
 
-    int l[7];
-    int x = arr[6];
+    int arr[n];
 
-    for (int i = 6; i >= 0; i--)
+    for (int i = 0; i < n; i++)
     {
-        if (i == 6)
+        cout << "Enter the element at " << i << " position of the array: " << endl;
+        cin >> arr[i];
+    }
+
+    int l[n];
+    int x = arr[n - 1];
+
+    for (int i = n - 1; i >= 0; i--)
+    {
+        if (i == n - 1)
         {
-            l[0] = arr[6];
+            l[0] = arr[n - 1];
         }
         else
         {
             if (arr[i] >= max(arr[i], x))
             {
                 // cout << x << endl;
-                l[6 - i] = arr[i];
+                l[n - 1 - i] = arr[i];
                 x = max(arr[i], arr[i + 1]);
             }
             else
             {
-                l[6 - i] = 0;
+                l[n - 1 - i] = 0;
             }
         }
     }
 
-    for (int i = 0; i < 7; i++)
+    // Leaders are the elements who are greater than all elements present on it's right side
+
+    cout << "The Leaders of the array are: " << endl;
+
+    for (int i = 0; i < n - 1; i++)
     {
         if (l[i] != 0)
         {
