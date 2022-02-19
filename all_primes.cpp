@@ -10,7 +10,7 @@ int main()
 
     cout << "Enter the second number of the range: " << endl;
     cin >> b;
-
+    cout << "Prime numbers between " << a << " and " << b << " are: " << endl;
     for (int num = a; num <= b; num++)
     {
         int i;
@@ -24,7 +24,7 @@ int main()
 
         if (i == num)
         {
-            cout << i << " prime number between " << a << " and " << i << "is: " << endl;
+
             cout << num << endl;
         }
     }
