@@ -81,6 +81,8 @@ int main()
     // ============================================================================
     // Kadane's Algorithm (Time Complexity: O(n))
 
+    // Doesn't work when all elements are negative
+
     int maxSum = INT_MIN, currentSum = 0;
 
     for (int i = 0; i < n; i++)
