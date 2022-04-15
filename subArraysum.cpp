@@ -18,6 +18,21 @@ int main()
         cin >> a[i];
     }
 
+    // Brute Force Approach
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     int sum = a[i];
+    //     for (int j = i + 1; j < n; j++)
+    //     {
+    //         sum += a[j];
+    //         if (sum == s)
+    //             cout << "The subarray with the given sum was found in between " << i << " and " << j << endl;
+    //     }
+    // }
+
+    // Optimised Approach =============================================================================================
+
     int i = 0, j = 0, st = -1, en = -1, sum = 0;
 
     while (j < n && sum + a[j] <= s)
