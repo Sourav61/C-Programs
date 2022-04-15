@@ -15,6 +15,30 @@ int main()
         cin >> a[i];
     }
 
+    // Brute Force Approach
+
+    // int mx = INT_MAX;
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = i + 1; j < n; j++)
+    //     {
+    //         if (a[i] == a[j])
+    //         {
+    //             mx = min(mx, i);
+    //         }
+    //     }
+    // }
+
+    // if (mx == INT_MAX)
+    //     cout << "-1" << endl;
+    // else
+    //     cout << mx << endl;
+
+    // ===============================================================
+
+    // Optimised Approach
+
     const int N = 1e2 + 2;
 
     int idx[N];
