@@ -14,7 +14,7 @@ int main()
         cin >> a[i];
     }
 
-    // Brute Force Approach
+    // Brute Force Approach (Time Complexity: O(n^3))
 
     // int maxSum = INT_MIN;
 
@@ -35,7 +35,7 @@ int main()
 
     // Optimized Approach ==========================================================
 
-    // My Approach
+    // My Approach (Time Complexity: O(n^2))
 
     // int i = 0, j = 0, sum = 0;
 
@@ -53,33 +53,45 @@ int main()
 
     // cout << "The maximum sum out of all subarrays in the given array is: " << maxSum << endl;
 
-    // Approach in Lecture 8.6 ========================================================================================
+    // ========================================================================================
+    // Approach in Lecture 8.6 (Time Complexity: O(n^2))
 
-    int currSum[n + 1];
-    currSum[0] = 0;
+    // int currSum[n + 1];
+    // currSum[0] = 0;
 
-    for (int i = 1; i <= n; i++)
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     currSum[i] = currSum[i - 1] + a[i - 1];
+    // }
+
+    // int maxSum = INT_MIN;
+
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     int sum = 0;
+    //     for (int j = 0; j < i; j++)
+    //     {
+    //         sum = currSum[i] - currSum[j];
+    //         maxSum = max(sum, maxSum);
+    //     }
+    // }
+
+    // cout << "The maximum sum out of all subarrays in the given array is: " << maxSum << endl;
+
+    // ============================================================================
+    // Kadane's Algorithm (Time Complexity: O(n))
+
+    int maxSum = INT_MIN, currentSum = 0;
+
+    for (int i = 0; i < n; i++)
     {
-        currSum[i] = currSum[i - 1] + a[i - 1];
-    }
-
-    for (int i = 1; i <= n; i++)
-    {
-        cout << currSum[i] << " ";
-    }
-    cout << endl;
-
-    int maxSum = INT_MIN;
-
-    for (int i = 1; i <= n; i++)
-    {
-        int sum = 0;
-        for (int j = 0; j < i; j++)
+        currentSum += a[i];
+        if (currentSum < 0)
         {
-            sum = currSum[i] - currSum[j];
-            maxSum = max(sum, maxSum);
+            currentSum = 0;
         }
+        maxSum = max(maxSum, currentSum);
     }
 
-    cout << maxSum << endl;
+    cout << "The maximum sum out of all subarrays in the given array is: " << maxSum << endl;
 }
