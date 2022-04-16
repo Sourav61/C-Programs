@@ -40,6 +40,6 @@ int main()
         }
     }
 
-    cout << ans << endl;
+    cout << "The smallest positive missing number in the given array is: " << ans << endl;
     return 0;
 }

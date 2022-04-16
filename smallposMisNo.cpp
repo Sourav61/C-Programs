@@ -1,3 +1,4 @@
+// Only applicable to positive numbers
 #include <iostream>
 using namespace std;
 
@@ -37,7 +38,7 @@ int main()
         // cout << i << " ";
         if (a[i] != i)
         {
-            cout << i << endl;
+            cout << i << " is the smallest positive number missing in the above array! " << endl;
             break;
         }
     }
