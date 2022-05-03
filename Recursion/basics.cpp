@@ -14,6 +14,16 @@ int Sum(int n)
     return n + prevSum;
 }
 
+int parmaeterSum(int n, int sum)
+{
+    if (n < 1)
+    {
+        return sum;
+    }
+
+    parmaeterSum(n - 1, sum + n);
+}
+
 int power(int n, int p)
 {
     if (p == 0)
@@ -45,7 +55,15 @@ int main()
     cin >> n;
     // cin >> p;
 
-    // cout << "The sum of first " << n << " numbers is: " << Sum(n) << endl;
+    // Functional Recursion
+
+    cout << "The sum of first " << n << " numbers is: " << Sum(n) << endl;
+
+    // Using Parameterized Recucrsion
+
+    cout << "The sum of first " << n << " numbers is: " << parmaeterSum(n, 0) << endl;
+
+    // cout << "The sum of first " << n << " numbers is: " << parmaeterSum(n, 0) << endl;
 
     // cout << "The power of first " << n << " numbers is: " << power(n, p) << endl;
 
