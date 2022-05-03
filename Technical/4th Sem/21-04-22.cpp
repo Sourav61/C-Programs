@@ -18,32 +18,36 @@ void signon(void)
 
 int main()
 {
-    // 1st Program
-
-    // int x, y;
-    // for (x = 0; y = 0; x + y < 10, ++x)
-    // {
-    //     y = getchar();
-    //     y = y - '0';
-    // }
-
-    // 2nd Program
-
-    // signon();
-
-    // 3rd Program
-
-    // for (int x = 0; x != 123;)
-    // {
-    //     scanf("%d", &x);
-    // }
-
-    // 4th Program
-
-    // for (;;)
-    // {
-    //     printf("SCANNING \n");
-    // }
+    signon();
 
     return 0;
 }
+
+// 1st Program
+
+// int x, y;
+// for (x = 0, y = 0; x + y < 10; ++x)
+// {
+//     printf("Enter  a  key  from  keyword:  ");
+//     y = getchar();
+//     y = y - '0';
+//     printf("your  entered  keyword  is:	%c\n", y);
+//     printf("And  ASCII  value  for  your  entered  key  is:	%d", y);
+// }
+// return 0;
+
+// 2nd Program
+
+// 3rd Program
+
+// for (int x = 0; x != 123;)
+// {
+//     scanf("%d", &x);
+// }
+
+// 4th Program
+
+// for (;;)
+// {
+//     printf("SCANNING \n");
+// }
