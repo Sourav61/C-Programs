@@ -62,6 +62,8 @@ bool SubsequenceK(int ind, vector<int> &ds, int s, int sum, int a[], int n)
     {
         return true;
     }
+
+    return false;
 }
 
 int main()
