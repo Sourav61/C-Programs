@@ -49,7 +49,7 @@ void evenAfterOdd(node *&head)
 
     node *evenStart = even;
 
-    while (odd->next != NULL && even->next != NULL)
+    while (even != NULL && even->next != NULL)
     {
         odd->next = even->next;
         odd = odd->next;
@@ -59,11 +59,6 @@ void evenAfterOdd(node *&head)
     }
 
     odd->next = evenStart;
-
-    if (odd->next != NULL)
-    {
-        even->next = NULL;
-    }
 }
 
 void display(node *head)
@@ -83,9 +78,9 @@ int main()
 {
     node *head = NULL;
 
-    int a[] = {1, 2, 3, 4, 5, 6};
+    int a[] = {1, 2, 3, 4, 5};
 
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < 5; i++)
     {
         insertAtTail(head, a[i]);
     }
