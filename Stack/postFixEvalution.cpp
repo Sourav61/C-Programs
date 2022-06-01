@@ -6,7 +6,7 @@ using namespace std;
 //         int top;
 //         int *arr;
 
-//         Stack(int n){
+//         Stack(){
 //             top = -1;
 //             arr = new int[n];
 //         }

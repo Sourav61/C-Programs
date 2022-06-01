@@ -8,7 +8,7 @@ using namespace std;
 //     int top;
 //     int *arr;
 
-//     Stack(int n){
+//     Stack(){
 //         arr = new int[n];
 //         top = -1;
 //     }
