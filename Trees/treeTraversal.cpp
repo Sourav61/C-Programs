@@ -3,8 +3,8 @@ using namespace std;
 
 struct Node{
     int data;
-    struct Node*left;
-    struct Node*right;
+    struct Node* left;
+    struct Node* right;
 
     Node(int val){
         data = val;
@@ -55,11 +55,14 @@ int main(){
     root->right->left = new Node(6);
     root->right->right = new Node(7);
 
-    cout<<"The preorder traversal for the above tree would be: "<<preorder(root);
+    cout<<"The preorder traversal for the above tree would be: ";
+    preorder(root);
     cout<<endl;
-    cout<<"The inorder traversal for the above tree is: "<<inorder(root);
+    cout<<"The inorder traversal for the above tree is: ";
+    inorder(root);
     cout<<endl;
-    cout<<"The postorder traversal for the above tree is: "<<postorder(root);
+    cout<<"The postorder traversal for the above tree is: ";
+    postorder(root);
     cout<<endl;
 
     return 0;

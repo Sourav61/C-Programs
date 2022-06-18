@@ -11,7 +11,7 @@ struct Node {
         left = NULL;
         right = NULL; 
     }
-}
+};
 
 int main(){
 
