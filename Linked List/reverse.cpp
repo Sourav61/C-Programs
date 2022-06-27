@@ -57,7 +57,7 @@ void deletion(node *&head, int val)
         return;
     }
 
-    if (head->next = NULL)
+    if (head->next == NULL)
     {
         deletionAtHead(head);
         return;
