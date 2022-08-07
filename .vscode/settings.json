@@ -1,11 +1,27 @@
 {
-    "files.associations": {
-        "*.ejs": "html",
-        "*.js": "javascriptreact",
-        "iostream": "cpp",
-        "ostream": "cpp",
-        "*.tcc": "cpp",
-        "queue": "cpp"
-    },
-    "C_Cpp.errorSquiggles": "Disabled"
+  "files.associations": {
+    "*.ejs": "html",
+    "*.js": "javascriptreact",
+    "iostream": "cpp",
+    "ostream": "cpp",
+    "*.tcc": "cpp",
+    "queue": "cpp",
+    "deque": "cpp",
+    "exception": "cpp",
+    "ios": "cpp",
+    "istream": "cpp",
+    "iterator": "cpp",
+    "list": "cpp",
+    "memory": "cpp",
+    "stack": "cpp",
+    "streambuf": "cpp",
+    "tuple": "cpp",
+    "unordered_map": "cpp",
+    "utility": "cpp",
+    "vector": "cpp",
+    "xhash": "cpp",
+    "xiosbase": "cpp",
+    "xstring": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "Disabled"
 }
