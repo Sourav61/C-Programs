@@ -40,7 +40,7 @@ int allocateMinimumPages(int arr[], int n, int m)
 
     int start = 0, end = sum, ans = INT_MAX;
 
-    while (start < end)
+    while (start <= end)
     {
         int mid = (start + end) / 2;
 
@@ -61,10 +61,10 @@ int allocateMinimumPages(int arr[], int n, int m)
 int main()
 {
 
-    int arr[] = {12, 34, 67, 90};
+    int arr[] = {22, 23, 67};
 
-    int n = 4;
-    int m = 2;
+    int n = 3;
+    int m = 1;
 
     cout << "The minimum no. of pages: " << allocateMinimumPages(arr, n, m) << endl;
 
